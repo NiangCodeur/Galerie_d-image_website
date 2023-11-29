@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Galerie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <img src="images/H1.png" width="100%" id="Img-principal">
+                <div class="small-img-row">
+                    <div class="col">
+                        <img src="images/H1.png" width="100%" class="small-img">
+                    </div>
+                    <div class="col">
+                        <img src="images/H2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="col">
+                        <img src="images/H3.png" width="100%" class="small-img">
+                    </div>
+                    <div class="col">
+                        <img src="images/H4.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- JavaSript ---------------->
+    <script>
+        let Img_pricipal = document.getElementById('Img-principal')
+        let SmallImg = document.getElementsByClassName('small-img')
+
+        SmallImg[0].onclick = function() {
+            Img_pricipal.src = SmallImg[0].src
+        }
+        SmallImg[1].onclick = function() {
+            Img_pricipal.src = SmallImg[1].src
+        }
+        SmallImg[2].onclick = function() {
+            Img_pricipal.src = SmallImg[2].src
+        }
+        SmallImg[3].onclick = function() {
+            Img_pricipal.src = SmallImg[3].src
+        }
+    </script>
+</body>
+</html>
